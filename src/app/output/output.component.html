@@ -13,10 +13,12 @@
   </p>
   <p>
     <label>Result:</label>&nbsp;
-    <span class="result" [ngSwitch]="gameData.gameResult">
-      <ng-container *ngSwitchCase="GameResult.USER_WINS">You Won!</ng-container>
-      <ng-container *ngSwitchCase="GameResult.COMPUTER_WINS">Computer wins</ng-container>
-      <ng-container *ngSwitchCase="GameResult.REPLAY">Replay</ng-container>
+    <span class="result">
+      @switch (gameData.gameResult){
+        @case(GameResult.USER_WINS){ You Won! }
+        @case(GameResult.COMPUTER_WINS){ Computer wins }
+        @case(GameResult.REPLAY){ Replay }
+      }
     </span>
   </p>
   <p>

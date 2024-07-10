@@ -9,7 +9,7 @@ import {CommonModule} from "@angular/common";
   selector: 'app-output',
   standalone: true,
   imports: [
-    RouterLink, CommonModule
+    RouterLink
   ],
   templateUrl: './output.component.html',
   styleUrl: './output.component.css'
