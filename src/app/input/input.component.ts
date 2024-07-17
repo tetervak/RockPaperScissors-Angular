@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import {GameService} from "../game.service";
 import {Choice} from "../choice";
 import {RouterLink} from "@angular/router";
+import {MatRadioButton, MatRadioGroup, MatRadioModule} from "@angular/material/radio";
+import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 @Component({
   selector: 'app-input',
   standalone: true,
   imports: [
-    RouterLink
+    RouterLink, MatCardModule, MatRadioGroup, MatRadioButton, MatButtonModule
   ],
   templateUrl: './input.component.html',
   styleUrl: './input.component.css'

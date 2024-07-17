@@ -1,20 +1,30 @@
 <main>
   <h2>Select your choice</h2>
-  <div class="choice-container">
-    <div>
-      <label><input type="radio" name="userChoice" (click)="setUserChoice(Choice.PAPER)">Paper</label><br/>
-      <img class="choice" src="/images/paper.png" alt="paper">
-    </div>
-    <div>
-      <label><input type="radio" name="userChoice" (click)="setUserChoice(Choice.ROCK)" checked>Rock</label><br/>
-      <img class="choice" src="/images/rock.png" alt="rock">
-    </div>
-    <div>
-      <label><input type="radio" name="userChoice" (click)="setUserChoice(Choice.SCISSORS)">Scissors</label><br/>
-      <img class="choice" src="/images/scissors.png" alt="scissors">
-    </div>
-  </div>
   <p>
-    <button routerLink="/output" (click)="play()">Play</button>
+    <mat-radio-group>
+      <div class="choice-container">
+        <mat-card appearance="outlined">
+          <mat-card-content>
+            <mat-radio-button (click)="setUserChoice(Choice.PAPER)">Paper</mat-radio-button><br>
+            <img class="choice" src="/images/paper.png" alt="paper">
+          </mat-card-content>
+        </mat-card>
+        <mat-card appearance="outlined">
+          <mat-card-content>
+            <mat-radio-button (click)="setUserChoice(Choice.ROCK)">Rock</mat-radio-button>
+            <img class="choice" src="/images/rock.png" alt="paper">
+          </mat-card-content>
+        </mat-card>
+        <mat-card appearance="outlined">
+          <mat-card-content>
+            <mat-radio-button (click)="setUserChoice(Choice.SCISSORS)">Scissors</mat-radio-button>
+            <img class="choice" src="/images/scissors.png" alt="paper">
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-radio-group>
+  </p>
+  <p>
+    <button mat-flat-button routerLink="/output" (click)="play()">Play</button>
   </p>
 </main>

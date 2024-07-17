@@ -1,9 +1,10 @@
 main {
   padding-left: 2em;
-  font-family: sans-serif;
+  padding-bottom: 100px;
 }
 
 h2 {
+  margin-top: 2em;
   color: #00bcd4;
 }
 
@@ -21,3 +22,16 @@ div.choice-container{
 img.choice {
   width: 60px;
 }
+
+mat-card{
+  width: 150px;
+}
+
+mat-card-content{
+  text-align: center;
+}
+
+button{
+  margin-top: 2em;
+}
+
