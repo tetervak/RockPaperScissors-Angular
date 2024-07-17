@@ -24,11 +24,17 @@ img.choice {
 }
 
 mat-card{
-  width: 150px;
+  margin: 20px;
+  width: 250px;
+}
+
+mat-card.elevated{
+  box-shadow: 2px 2px 6px gray;
 }
 
 mat-card-content{
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 button{

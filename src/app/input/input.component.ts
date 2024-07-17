@@ -5,12 +5,13 @@ import {RouterLink} from "@angular/router";
 import {MatRadioButton, MatRadioGroup, MatRadioModule} from "@angular/material/radio";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
+import {MatRipple} from "@angular/material/core";
 
 @Component({
   selector: 'app-input',
   standalone: true,
   imports: [
-    RouterLink, MatCardModule, MatRadioGroup, MatRadioButton, MatButtonModule
+    RouterLink, MatCardModule, MatRadioGroup, MatRadioButton, MatButtonModule,  MatRipple
   ],
   templateUrl: './input.component.html',
   styleUrl: './input.component.css'
