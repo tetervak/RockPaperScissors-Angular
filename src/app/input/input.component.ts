@@ -2,21 +2,23 @@ import { Component } from '@angular/core';
 import {GameService} from "../game.service";
 import {Choice} from "../choice";
 import {RouterLink} from "@angular/router";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-input',
   standalone: true,
   imports: [
-    RouterLink
+    RouterLink, FormsModule
   ],
   templateUrl: './input.component.html',
   styleUrl: './input.component.css'
 })
 export class InputComponent {
 
-  userChoice: Choice = Choice.ROCK;
+  userChoice: Choice;
 
   constructor(private gameService: GameService) {
+    this.userChoice = gameService.gameData.userChoice
   }
 
   protected readonly Choice = Choice;

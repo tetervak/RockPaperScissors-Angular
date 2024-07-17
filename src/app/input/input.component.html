@@ -2,15 +2,15 @@
   <h2>Select your choice</h2>
   <div class="choice-container">
     <div>
-      <label><input type="radio" name="userChoice" (click)="setUserChoice(Choice.PAPER)">Paper</label><br/>
+      <label><input type="radio" name="userChoice" [(ngModel)]="userChoice" [value]="Choice.PAPER">Paper</label><br/>
       <img class="choice" src="/images/paper.png" alt="paper">
     </div>
     <div>
-      <label><input type="radio" name="userChoice" (click)="setUserChoice(Choice.ROCK)" checked>Rock</label><br/>
+      <label><input type="radio" name="userChoice" [(ngModel)]="userChoice" [value]="Choice.ROCK">Rock</label><br/>
       <img class="choice" src="/images/rock.png" alt="rock">
     </div>
     <div>
-      <label><input type="radio" name="userChoice" (click)="setUserChoice(Choice.SCISSORS)">Scissors</label><br/>
+      <label><input type="radio" name="userChoice" [(ngModel)]="userChoice" [value]="Choice.SCISSORS">Scissors</label><br/>
       <img class="choice" src="/images/scissors.png" alt="scissors">
     </div>
   </div>
