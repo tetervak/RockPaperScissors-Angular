@@ -23,12 +23,6 @@ export class InputComponent {
 
   protected readonly Choice = Choice;
 
-  setUserChoice(choice: Choice): void {
-    console.log("setUserChoice() is called")
-    console.log("choice = " + choice)
-    this.userChoice = choice;
-  }
-
   play(): void {
     console.log("play() is called")
     console.log("this.userChoice = " + this.userChoice)
